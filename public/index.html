@@ -11,25 +11,16 @@
 
 <body>
 
-    <div class="w-full h-96"
+    <div class="w-full h-screen"
         style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('./assets/images/pim-myten-m41k1lTzjVM-unsplash.png');">
         <nav class="relative lg:flex lg:items-center w-full max-w-7xl mx-auto xl:px-6 sm:px-8 px-6">
-            <div class="flex flex-no-shrink items-center h-24">
+            <div class="flex flex-no-shrink items-center h-24 relative z-10">
 
                 <!-- Logo  -->
                 <a href="./index.html"
                     class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal text-black dark:text-white no-underline flex items-center">
                     <h2 class="text-28px text-white font-medium">Logo<span class="text-purple-10">Brand</span>
                     </h2>
-                </a>
-                <!-- Search Button -->
-                <a href="#"
-                    class="lg:hidden ml-auto flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal font-semibold text-black dark:text-white no-underline flex items-center">
-                    <svg class="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73.41 73.375">
-                        <path
-                            d="M72.94 68.598L51.63 47.283a29.077 29.077 0 10-4.32 4.323l21.31 21.315a1.525 1.525 0 002.16 0l2.16-2.161a1.523 1.523 0 000-2.162zm-43.88-16.63a22.931 22.931 0 1122.93-22.931 22.958 22.958 0 01-22.93 22.931z"
-                            fill="current" fill-rule="evenodd" />
-                    </svg>
                 </a>
                 <!-- Menu Button -->
                 <button class="block lg:hidden cursor-pointer relative w-12 h-12 px-4 py-2">
@@ -44,26 +35,32 @@
                 </button>
             </div>
             <!-- Menus -->
-            <div class="lg:flex lg:items-stretch lg:flex-no-shrink lg:flex-grow">
-                <div class="lg:flex lg:items-stretch lg:justify-end ml-auto">
+            <div
+                class="lg:flex lg:items-stretch lg:flex-no-shrink lg:flex-grow lg:static fixed inset-0   bg-opacity- z-50">
+                <div class="lg:hidden fixed inset-0 h-screen bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg">
+                </div>
+                <!-- <div class="lg:hidden fixed inset-0 h-screen bg-white bg-opacity-50 filter ">
+                </div> -->
+                <div
+                    class="lg:flex lg:items-stretch lg:justify-end lg:ml-auto text-center space-y-6 lg:space-y-0 lg:space-x-8">
                     <a href="./index.html"
-                        class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal font-semibold text-white no-underline flex items-center">Home</a>
+                        class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal font-semibold text-white no-underline flex items-center justify-center text-2xl lg:text-sm">Home</a>
                     <a href="#"
-                        class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal font-semibold text-white no-underline flex items-center">Event</a>
+                        class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal font-semibold text-white no-underline flex items-center justify-center text-2xl lg:text-sm">FOOD
+                        & DRINKS</a>
                     <a href="./about.html"
-                        class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal font-semibold text-white no-underline flex items-center">About
+                        class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal font-semibold text-white no-underline flex items-center justify-center text-2xl lg:text-sm">TOUR
                     </a>
                     <a href="./contact.html"
-                        class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal font-semibold text-white no-underline flex items-center">Contact
+                        class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal font-semibold text-white no-underline flex items-center justify-center text-2xl lg:text-sm">CONTACT
                     </a>
-                    <a href="#"
-                        class="hidden flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal font-semibold text-white no-underline lg:flex items-center">
-                        <svg class="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73.41 73.375">
-                            <path
-                                d="M72.94 68.598L51.63 47.283a29.077 29.077 0 10-4.32 4.323l21.31 21.315a1.525 1.525 0 002.16 0l2.16-2.161a1.523 1.523 0 000-2.162zm-43.88-16.63a22.931 22.931 0 1122.93-22.931 22.958 22.958 0 01-22.93 22.931z"
-                                fill="current" fill-rule="evenodd" />
-                        </svg>
-                    </a>
+                    <div class="flex items-center justify-center px-3 py-2">
+                        <a href="#"
+                            class="flex-no-grow flex-no-shrink relative py-1 px-3 leading-normal font-semibold text-white no-underline text-xl lg:text-sm bg-purple-10 rounded">
+                            BOOK TICKET
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
