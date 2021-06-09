@@ -17,3 +17,7 @@ body {
     background: transparent !important;
     color: white;
 }
+
+.carousel-nav .carousel-cell.is-selected {
+    border: 2px solid #fff;
+}
