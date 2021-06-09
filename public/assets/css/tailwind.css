@@ -12155,6 +12155,10 @@ select{
   height: 440px;
 }
 
+.h-490px{
+  height: 490px;
+}
+
 .h-520px{
   height: 520px;
 }
@@ -44403,6 +44407,10 @@ body {
     height: 440px;
   }
 
+  .sm\:h-490px{
+    height: 490px;
+  }
+
   .sm\:h-520px{
     height: 520px;
   }
@@ -76460,6 +76468,10 @@ body {
 
   .md\:h-440px{
     height: 440px;
+  }
+
+  .md\:h-490px{
+    height: 490px;
   }
 
   .md\:h-520px{
@@ -108521,6 +108533,10 @@ body {
     height: 440px;
   }
 
+  .lg\:h-490px{
+    height: 490px;
+  }
+
   .lg\:h-520px{
     height: 520px;
   }
@@ -140580,6 +140596,10 @@ body {
     height: 440px;
   }
 
+  .xl\:h-490px{
+    height: 490px;
+  }
+
   .xl\:h-520px{
     height: 520px;
   }
@@ -172637,6 +172657,10 @@ body {
 
   .\32xl\:h-440px{
     height: 440px;
+  }
+
+  .\32xl\:h-490px{
+    height: 490px;
   }
 
   .\32xl\:h-520px{
