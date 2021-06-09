@@ -3,6 +3,12 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      width: {
+        "84px": "84px",
+      },
+      height: {
+        "84px": "84px",
+      },
       colors: {
         purple: {
           10: "#8027D8",
@@ -10,6 +16,8 @@ module.exports = {
       },
       fontSize: {
         "28px": "28px",
+        "40px": "40px",
+        "115px": "115px",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
@@ -20,5 +28,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
