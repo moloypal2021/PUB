@@ -15,32 +15,24 @@
         style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('./assets/images/pim-myten-m41k1lTzjVM-unsplash.png');">
         <nav class="relative lg:flex lg:items-center w-full max-w-7xl mx-auto xl:px-6 sm:px-8 px-6">
             <div class="flex flex-no-shrink items-center h-24 relative z-10">
-
+                <!-- Menu Button -->
+                <button onclick="openNav()" class="block lg:hidden cursor-pointer relative mr-6 focus:outline-none">
+                    <svg class="fill-current text-white w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
                 <!-- Logo  -->
                 <a href="./index.html"
                     class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal text-black dark:text-white no-underline flex items-center">
                     <h2 class="text-28px text-white font-medium">Logo<span class="text-purple-10">Brand</span>
                     </h2>
                 </a>
-                <!-- Menu Button -->
-                <button class="block lg:hidden cursor-pointer relative w-12 h-12 px-4 py-2">
-                    <svg class="fill-current text-black dark:text-white w-5 h-5" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20">
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                    </svg>
-                    <!-- <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                    <path
-                        d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
-                </svg> -->
-                </button>
             </div>
             <!-- Menus -->
-            <div
-                class="flex items-center justify-center lg:items-stretch lg:flex-no-shrink lg:flex-grow lg:static fixed inset-0   bg-opacity- z-50">
+            <div id="navMenu"
+                class="hidden lg:flex flex-col lg:flex-row items-center justify-center lg:items-stretch lg:flex-no-shrink lg:flex-grow lg:static fixed inset-0 z-50">
                 <div class="lg:hidden fixed inset-0 h-screen bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg">
                 </div>
-                <!-- <div class="lg:hidden fixed inset-0 h-screen bg-white bg-opacity-50 filter ">
-                </div> -->
                 <div
                     class="lg:flex lg:items-stretch lg:justify-end lg:ml-auto text-center space-y-6 lg:space-y-0 lg:space-x-8">
                     <a href="./index.html"
@@ -62,9 +54,31 @@
                         </a>
                     </div>
                 </div>
+                <button onclick="closeNav()" class="block lg:hidden cursor-pointer relative mt-20">
+                    <svg class="fill-current text-white w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path
+                            d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
+                    </svg>
+                </button>
             </div>
         </nav>
     </div>
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("navMenu").classList.add("flex");
+            document.getElementById("navMenu").classList.remove("hidden");
+
+        }
+
+        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+            document.getElementById("navMenu").classList.add("hidden");
+            document.getElementById("navMenu").classList.remove("flex");
+        }
+    </script>
 </body>
 
 </html>
