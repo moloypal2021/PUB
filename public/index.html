@@ -595,20 +595,27 @@
 
 
     <script>
+        // Date
         $(function () {
+            // Current Date
+            var today = new Date();
+            var dd = String(today.getDate()).padStart(2, '0');
+            var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+            var yyyy = today.getFullYear();
+            today = mm + '/' + dd + '/' + yyyy;
+
+
             $('input[name="date"]').daterangepicker({
                 singleDatePicker: true,
                 showCustomRangeLabel: true,
                 autoUpdateInput: true,
                 "autoApply": true,
-                "minDate": "",
+                "minDate": today,
             }, function (start, end, label) {
-                // var years = moment().diff(start, 'years');
-                // alert("You are " + years + " years old!");
-                const min = this.autoUpdateInput;
-                this.minDate = min;
+
 
             });
+
         });
         // Mobile Navbar open
         function openNav() {
