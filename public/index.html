@@ -601,9 +601,12 @@
                 showCustomRangeLabel: true,
                 autoUpdateInput: true,
                 "autoApply": true,
+                "minDate": "",
             }, function (start, end, label) {
                 // var years = moment().diff(start, 'years');
                 // alert("You are " + years + " years old!");
+                const min = this.autoUpdateInput;
+                this.minDate = min;
 
             });
         });
