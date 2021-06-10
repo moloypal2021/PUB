@@ -29,6 +29,9 @@ module.exports = {
           30: "#311F33",
           40: "#040004",
         },
+        gray: {
+          10: "#F3EDED",
+        },
       },
       fontSize: {
         "28px": "28px",
@@ -43,7 +46,12 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      transform: ["group-hover", "hover"],
+      translate: ["group-hover", "hover"],
+      borderWidth: ["group-hover", "hover"],
+      display: ["group-hover", "hover"],
+    },
   },
   plugins: [require("@tailwindcss/forms")],
 };
