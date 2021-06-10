@@ -32,6 +32,9 @@ module.exports = {
         gray: {
           10: "#F3EDED",
         },
+        light: {
+          10: "#F3EDED",
+        },
       },
       fontSize: {
         "28px": "28px",
@@ -42,6 +45,9 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         discodiva: ["Disco Diva", "sans-serif"],
+      },
+      transitionDuration: {
+        0.6: "0.6s",
       },
     },
   },
