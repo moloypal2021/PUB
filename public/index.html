@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="./assets/css/tailwind.css">
 
@@ -128,7 +129,7 @@
                                 </svg>
                             </span>
                         </div>
-                        <input type="date" name="date" id="date"
+                        <input type="text" name="date" id="date"
                             class="focus:outline-none bg-transparent block w-full py-3 pl-12 text-base border-white text-white font-poppins font-medium rounded-md appearance-none"
                             placeholder="Date">
                     </div>
@@ -586,10 +587,24 @@
     <!-- Contact and Footer Section End -->
 
 
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 
 
     <script>
+        $(function () {
+            $('input[name="date"]').daterangepicker({
+                singleDatePicker: true,
+                showCustomRangeLabel: true,
+                autoUpdateInput: true,
+                "autoApply": true,
+            }, function (start, end, label) {
+                // var years = moment().diff(start, 'years');
+                // alert("You are " + years + " years old!");
+
+            });
+        });
         // Mobile Navbar open
         function openNav() {
             document.getElementById("navMenu").classList.add("flex");
